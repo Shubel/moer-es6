@@ -34,6 +34,10 @@ const student = {
         chemistryTeacher: "Manik"
     },
 };
+
+// const position = student.teacher.head;
+// console.log(position);
+
 const {name, roll, subject, teacher} = student;
 const {math, physics} = student.subject;
 const {headName, position} = student.teacher.head;
