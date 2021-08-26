@@ -3,7 +3,7 @@ const numbers = [2, 5, 12, 65, 4, 34, 7, 14, 33];
 
 // filter
 const filterBiggerNumber = numbers.filter(number => number > 20);
-console.log(filterBiggerNumber);  // [ 65, 34, 33 ]    (Given the all elements into an array)
+console.log(filterBiggerNumber);  // [ 65, 34, 33 ]    (Given all elements into an array)
 
 // find
 const findBiggerNumber = numbers.find(number => number > 20);
@@ -24,8 +24,10 @@ console.log(expensive);
 const blacks = products.filter(product => product.color == 'pink');
 console.log(blacks);
 const greenItem = products.filter(product => product.color == 'green');
-console.log(greenItem);  // if the property value is not exists, then result is empty array []
+console.log(greenItem);  // if the object property value does not exist, then result is empty array []
 
 // find
 const blackItem = products.find(product => product.color == 'black');
 console.log(blackItem);
+const redItem = products.find(product => product.color == 'red');
+console.log(redItem);  // if the object property value does not exist, then the result is undefined.
